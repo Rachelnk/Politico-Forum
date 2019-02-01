@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head><title>Politico</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="politico.js" type="text/javascript"></script>
+<div class="topnav">
+<ul>
+    <li style="float:left"><a href="">Politico Forum</a></li>
+
+  <li style="float:right">    <a href="welcome.html">Logout</a></li>
+</ul>
+</div>
+</head>
+<body onload="document.getElementById('defaultOpen').click();">
+
+  <nav >
+
+    <a href="welcome.html"> Home</a>
+    <a href="profile.html"> User Profile</a>
+    <a href="politicians.html">Politicians</a>
+    <a href="admin.html">Electoral body</a>
+      <a href="politicians.html">Results</a>
+</nav>
+  <div class=" mainarea ">
+    <div class="tabContainer">
+  <div class="tab">
+  <button class="tablinks" onclick="openTab(event,'Info')" id="defaultOpen">Your Info</button>
+  <button class="tablinks" onclick="openTab(event,'Parties')">Political Parties</button>
+  <button class="tablinks" onclick="openTab(event,'Politicians')">Politicians</button>
+  </div>
+</div>
+
+  <div id="Info" class="tabcontent">
+    <div class="welcomecontainer">
+
+    <h2> Welcome Citizen!!<h2>
+      <div class="home-paragraph">
+    <p>Thank your for creating an account with this platform<br>
+      We still need more information about you, fill out your details in the form<br>
+    </p>
+    </div>
+  </div>
+  <div class="formarea">
+  <form class="" action="" method="">
+  <div class="home-form-control">
+    <label for="County">County</label><br>
+    <input type="text" name="county" value=""><br>
+    <label for="ID Number">Id Number</label><br>
+    <input type="text" name="ID Number" value=""><br>
+    <label for="Age">Age</label><br>
+    <input type="text" name="age" value=""><br>
+
+  <button type="submit" name="updateInfo">Submit</button><br>
+
+
+  </form>
+  </div>
+  </div>
+  <div class="formarea">
+    <p> You can reset your password here:</p>
+  <form class="" action="" method="">
+  <div class="home-form-control">
+    <label for="New Password">New Password</label><br>
+    <input type="password" name="nPassword" value=""><br>
+
+    <label for="Confirm Password">Confirm Password</label><br>
+    <input type="password" name="confpasswordPassword" value=""><br>
+
+  <button type="submit" name="updateInfo">Update</button><br>
+  </form>
+  </div>
+  </div>
+</div>
+  <div id="Parties" class="tabcontent">
+    <table width="50%">
+      <tr>
+        <th>Name</th>
+        <th>Leader</th>
+        <th>Founded</th>
+        <th>Headquarters</th>
+
+      </tr>
+      <tr>
+      <td>Black Flag</td>
+        <td>Beck O. Kato</td>
+          <td>2005</td>
+            <td>Nairobi</td>
+
+    </tr>
+    <tr>
+        <td>People's Party</td>
+        <td>Muller Kato</td>
+        <td>2006</td>
+        <td>Nairobi</td>
+    </tr>
+    <tr>
+      <td>KNC</td>
+      <td>K. Itito</td>
+      <td>2007</td>
+      <td>Kitui</td>
+    </tr>
+    <tr>
+      <td>MAK</td>
+      <td>Abdul Rasul</td>
+      <td>2008</td>
+      <td>Mombasa</td>
+    </tr>
+    <tr>
+      <td>TUNU</td>
+        <td>Oketch Owor</td>
+          <td>2008</td>
+            <td>Nairobi</td>
+      </tr>
+      <tr>
+        <td>ANCD</td>
+          <td>Juliet Karanja</td>
+            <td>2011</td>
+              <td>Thika</td>
+        </tr>
+    </table>
+  </div>
+  <div id="Politicians" class="tabcontent">
+    <table>
+      <tr>
+        <th>Politician</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Location</th>
+        <th><form class="" action="index.html" method="post">
+          <div class="form-control">
+            <button type="button" name="button">VOTE</button>
+
+          </div>
+
+        </form></th>
+      </tr>
+<td>Jackline June</td>
+      <td>Women's Rep</td>
+        <td> Nairobi County govt.</td>
+          <td>Nairobi</td>
+
+      </tr>
+      <tr>
+        <td>Omari Juma</td>
+        <td>MCA</td>
+          <td>Nairobi County govt.</td>
+            <td>Nairobi</td>
+
+        </tr>
+
+          <tr>
+            <td> Otieno John</td>
+            <td>MP</td>
+              <td>Nairobi County govt.</td>
+                <td>Embakasi South</td>
+
+            </tr>
+            <tr>
+              <td>Trevor Nduati</td>
+              <td>Councillor</td>
+                <td>Nairobi County govt.</td>
+                  <td>Imara Daima</td>
+
+              </tr>
+
+
+    </table>
+    </div>
+</div>
+
+
+
+  </body>
+<div class="footer">Copyright Politico 2019</div>
+</html>
