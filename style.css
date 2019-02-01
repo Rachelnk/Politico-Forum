@@ -19,9 +19,11 @@ h2 {
 .home-paragraph{
   font-size: 14px;
 }
+
 .home-paragraph a{
 color:white;
 }
+
 
 .welcomecontainer {
   float:left;
@@ -201,6 +203,7 @@ input{
 .formcontainer{
   padding-top:300px;
 }
+
 .home-form-control input[type=button ]{
 border-radius: 25px;
 background-color: rgb(0,255,255,0.4)
@@ -210,7 +213,19 @@ border-radius: 25px;
 background-color: rgb(0,255,255,0.4)
 }
 /* style the forms and their controls*/
+
 .home-form-control input[type=text], [type=password], [type=number],[type=email]  {
+
+.home-form-control button[type= submit]{
+border-radius: 25px;
+background-color: rgb(0,255,255,0.4)
+}
+.home-form-control input[type=text], [type=password], [type=number],[type=email]  {
+
+/* style the forms and their controls*/
+.home-form-control input[type=text], [type=password], [type=number],[type=email]  {
+border-radius: 25px;
+
   display: inline-block;width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -218,11 +233,26 @@ background-color: rgb(0,255,255,0.4)
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+
 border-radius:25px;
 
 }
  .form-control  input[type=text], [type=password], [type=number],[type=email]  {
   display: inline-block;
+
+
+border-radius:25px;
+
+ border-bottom-style: ridge;
+
+
+}
+ .form-control  input[type=text], [type=password], [type=number],[type=email]  {
+  display: inline-block;
+
+border-radius: 25px;
+
+
   border:none;
   border-bottom: 2px;
   width: 300px;
@@ -232,7 +262,30 @@ border-radius:25px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+
  border-radius:25px;
+
+
+
+ border-radius:25px;
+
+
+
+
+}
+.home-form-control button[type= submit]{
+border-radius: 50px;
+ padding: 12px 12px;
+background-color: rgb(0,255,255,0.4)
+}
+.form-control button[type= submit]{
+border-radius: 50px;
+background-color: rgb(0,255,255,0.4)
+}
+.home-form-control a {
+font-color:white;
+ 
+  
 
 }
 /* style the forms and their controls*/
@@ -243,11 +296,20 @@ border-radius:25px;
   padding:12px 18px;
   width:100px;
 }
+
 /* style the forms and their controls*/
 .home-form-control .form-control button:hover {
 opacity:0.9;
 
 }
+
+
+label {
+font-type:bold;
+}
+/* style the forms and their controls*/
+
+
 th {
 padding: 5px 5px;
   text-align: left;
@@ -265,5 +327,10 @@ padding: 5px 5px;
    background-color: #333;
    color: white;
    text-align: center;
+
    padding: 15px;
+
+
+   padding: 5px
+
 }
