@@ -213,6 +213,9 @@ border-radius: 25px;
 background-color: rgb(0,255,255,0.4)
 }
 /* style the forms and their controls*/
+
+.home-form-control input[type=text], [type=password], [type=number],[type=email]  {
+
 .home-form-control button[type= submit]{
 border-radius: 25px;
 background-color: rgb(0,255,255,0.4)
@@ -233,6 +236,13 @@ border-radius: 25px;
 
 border-radius:25px;
 
+}
+ .form-control  input[type=text], [type=password], [type=number],[type=email]  {
+  display: inline-block;
+
+
+border-radius:25px;
+
  border-bottom-style: ridge;
 
 
@@ -241,6 +251,7 @@ border-radius:25px;
   display: inline-block;
 
 border-radius: 25px;
+
 
   border:none;
   border-bottom: 2px;
@@ -251,6 +262,10 @@ border-radius: 25px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+
+ border-radius:25px;
+
+
 
  border-radius:25px;
 
@@ -271,6 +286,7 @@ background-color: rgb(0,255,255,0.4)
 font-color:white;
  
   
+
 }
 /* style the forms and their controls*/
 .home-form-control .form-control button {
@@ -286,6 +302,7 @@ font-color:white;
 opacity:0.9;
 
 }
+
 
 label {
 font-type:bold;
@@ -310,6 +327,9 @@ padding: 5px 5px;
    background-color: #333;
    color: white;
    text-align: center;
+
+   padding: 15px;
+
 
    padding: 5px
 
