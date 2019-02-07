@@ -1,0 +1,12 @@
+python = 3.6.3
+pylint = 1.6.5
+pytest = 4.2.0
+Flask = 1.0.2
+werkzeug = 0.14
+MarkupSafe = 1.1.0
+itsdanderous = 0.24
+Click =5.1
+Jinja2 2.10
+pep8 1.7.1
+Jetbrains pycharm
+Postman = 6.7.3
