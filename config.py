@@ -12,7 +12,7 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     DEBUG = True
     TESTING = True
-
+#configurations for production class
 class ProductionConfig(Config):
     DEBUG = False
     TESTING = False
