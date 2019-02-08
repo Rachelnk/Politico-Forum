@@ -19,3 +19,18 @@ def create_party():
     party.save_party()
 
     return jsonify(party.save_party())
+
+political_list = []
+@parties_bp.route('/parties', methods=['GET'])
+def get_parties():
+    parties = PartiesModel.get_all_parties()
+    #perform validation 
+    if parties:
+        return make_response(jsonify({
+            "status" : 200,
+            "data": parties
+         }),200)
+    return make_response(jsonify({
+        "status": 404,
+        "error": "No political party could be found"
+    }), 404)
