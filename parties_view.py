@@ -34,3 +34,19 @@ def get_parties():
         "status": 404,
         "error": "No political party could be found"
     }), 404)
+
+@parties_bp.route('/parties/<int:party_id>', methods =['GET'])
+def get_specific_party(party_id):
+
+    specific_patry = PartiesModel.get_specific_party(party_id)
+    #= POLITICAL_PARTY.get_specific_office(office_id)
+
+    if specific_patry:
+        return make_response(jsonify({
+            "status": 200,
+            "data": specific_patry
+        }), 200)
+    return make_response(jsonify({
+        "status": 404,
+        "error": "Political office not found"
+    }), 404)
