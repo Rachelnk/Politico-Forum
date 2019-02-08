@@ -4,7 +4,7 @@ class Config():
     DEBUG = False
     SECRET = os.getenv('SECRET')
 
-#Configurations for Development
+#configurations for Development
 class DevelopmentConfig(Config):
     DEBUG= True
 
