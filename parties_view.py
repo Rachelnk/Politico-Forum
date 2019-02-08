@@ -50,3 +50,17 @@ def get_specific_party(party_id):
         "status": 404,
         "error": "Political office not found"
     }), 404)
+
+@parties_bp.route("/parties", methods = ['DELETE'])
+
+def delete_politicalparty(party_id):
+    delete_party = PartiesModel.delete_politicalparty(party_id)
+    if delete_party:
+        return make_response(jsonify({
+            "status":200,
+            "data": delete_party
+        }),200)
+    return  make_response(jsonify({
+        "status": 404,
+        "error":"THe political office could not be deleted"
+    }), 404)
