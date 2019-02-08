@@ -18,3 +18,8 @@ class OfficesModel():
         self.politicaloffice.append(office)
         #return dict(status=201, data=office)
         return office
+
+    #fetching a list of all the offices
+    @staticmethod
+    def get_all_offices():
+        return [vars(office) for office in politicaloffice]
