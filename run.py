@@ -1,6 +1,6 @@
 import os
 
-from Forum.app.__int__ import create_app
+from app.__int__ import create_app
 
 #config_name = os.getenv('APP_SETTINGS')
 flask_app = create_app('development')
