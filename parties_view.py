@@ -64,3 +64,24 @@ def delete_politicalparty(party_id):
         "status": 404,
         "error":"THe political office could not be deleted"
     }), 404)
+
+@parties_bp.route("/parties", methods = ['PATCH'])
+def edit_party(party_id):
+    try:
+        data = request.get_json()
+        name = data["name"]
+    except:
+        return make_response(jsonify({
+            "status": 400,
+            "error": "Party name not found"
+        }), 400)
+    
+    try:
+        party = PartiesModel.get_party_attributes(party_id)[0]
+    except IndexError:
+        return make_response(jsonify({"status": 404, "data": "The party does not exist"}), 404)
+    party.setname(name)
+    return make_response(jsonify({"status": 200, "data": [{
+        "id": party_id,
+        "name": name
+    }]}), 200)
