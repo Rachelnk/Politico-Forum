@@ -20,3 +20,16 @@ def create_office():
     new_office.save_office()
 
     return jsonify(new_office.save_office())
+
+@offices_bp.route("/offices", methods= ['GET'])
+def get_offices():
+    office_list = OfficesModel.get_all_offices()
+    if office_list:
+    return  make_response(jsonify({
+        "status":200,
+        "data": office_list
+    }),200)
+    return  make_response(jsonify({
+        "status":404,
+        "error": "No office data found"
+    }),404)
