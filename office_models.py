@@ -26,5 +26,5 @@ class OfficesModel():
 
     @staticmethod
     def get_specific_offices(id):
-        return [vars(office) for office in politicaloffice if office.id ==         id]
+        return [vars(office) for office in politicaloffice if office.id == id]
     
