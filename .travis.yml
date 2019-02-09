@@ -7,6 +7,6 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - python -m pytest --cov=app app/api
+  - python -m pytest --cov=app app/tests
 after_success:
 - coveralls
