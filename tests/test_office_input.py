@@ -1,7 +1,7 @@
 import json
 import unittest
 from Forum.app.api.v1.models.offices.__init__ import OfficesModel
-from Forum.tests.__init__ import BaseTest
+from Forum.tests.v1.__init__ import BaseTest
 from Forum.app.__int__ import create_app
 
 class OfficeData:
