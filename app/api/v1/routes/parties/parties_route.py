@@ -7,8 +7,7 @@ parties_bp = Blueprint('party_blueprint',__name__)
 #creates a politicalparty
 @parties_bp.route('/parties', methods = ['POST'])
 def create_party():
-    data = request.get_json()
-    
+    data = request.get_json()   
    
     name = data['name']
     logoUrl = data['logoUrl']
