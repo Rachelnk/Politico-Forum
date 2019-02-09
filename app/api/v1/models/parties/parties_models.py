@@ -35,8 +35,8 @@ class PartiesModel():
     @staticmethod
     def get_all_parties():
         return [vars(party) for party in politicalparty]
+    
     #fetching a specific office
-
     @staticmethod
     def get_specific_party(id):
         return [vars(party) for party in politicalparty if id == id]
