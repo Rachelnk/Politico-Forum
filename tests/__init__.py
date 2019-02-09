@@ -4,6 +4,7 @@ from Forum.app.__int__ import create_app
 from Forum.app.api.v1.models.offices.__init__ import OfficesModel
 
 
+
 class BaseTest(unittest.TestCase):
     "base class for test"
     path = "/api/v1"
