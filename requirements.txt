@@ -1,5 +1,5 @@
 
-python = 3.6.3
+python = 3.6
 pylint = 1.6.5
 pytest = 4.2.0
 Flask = 1.0.2
