@@ -7,6 +7,6 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - python -v tests/
+  - python -v app/tests/
 after_success:
 - coveralls
