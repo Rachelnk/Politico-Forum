@@ -6,9 +6,40 @@
 <p> Clone the repository to your local computer or download a zip file and extract. Here's the link to the application https://github.com/Rachelnk/Politico-Forum.git</p>
 
 <h1>Requirements  </h1>
-<p>To run the application you will need <li> Python 3.6 . Download it from <a href="">here</a></l1><l1>Flask.Download it from <a href="">here</a></l1><l1>Postman.Download it from <a href="">here</a></l1></p>
-<p>Once you have installed flask,set up a virtual environment and activate it: venv\Scripts\activate <\p>
-  <p>Ensure to install the packages in the requirements.txt file</p>
+<p>To run the application you will need <li> Python 3.6 . Download it from <a href="">here</a></l1><l1>Flask.Download it from <a href="">here</a></l1>
+<l1>Postman.Download it from <a href="">here</a></l1></p>
+<p>Once you have installed flask,set up a virtual environment and activate it: 
+  venv\Scripts\activate <\p>
+<p>Ensure to install the packages in the requirements.txt file</p>
   
-  <h1>Testing</h1>
-  <p>Ensure you have installed pytest. To run tests navigate to the tests folder and run pytest -v</p>
+<h1>Testing</h1>
+<p>Ensure you have installed pytest. To run tests navigate to the tests folder and run pytest -v</p>
+ 
+<h1>EndPoints</h1>
+<table>
+  <tr>
+  <th>Method</th>
+   <th>URL</th>
+   <th>Funnction</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/parties</td>
+    <td>Create a new political party</td>
+    </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/parties</td>
+    <td>Create a new political party</td>
+    </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/parties</td>
+    <td>Create a new political party</td>
+    </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/parties</td>
+    <td>Create a new political party</td>
+    </tr>
+      
