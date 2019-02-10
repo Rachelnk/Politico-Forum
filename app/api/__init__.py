@@ -1,7 +1,7 @@
 from flask import Flask, Blueprint
-from Forum.app.api.v1.routes.parties.parties_route import parties_bp
-from Forum.app.api.v1.routes.all_parties.all_parties_route import parties_bp
-from Forum.app.api.v1.routes.offices.__init__ import offices_bp
+from app.api.v1.routes.parties.parties_route import parties_bp
+from app.api.v1.routes.all_parties.all_parties_route import parties_bp
+from app.api.v1.routes.offices.__init__ import offices_bp
 
 from Forum.configurations.config import app_config
 #register blueprints
