@@ -4,7 +4,6 @@ import unittest
 from tests.v1.base_test import BaseTestCase
 from tests.v1.helper_methods import create_party
 
-
 class TestParty(BaseTestCase):
     """docstring for TestParty"""
     politicalparty= {
