@@ -1,8 +1,8 @@
 """Test Class for party views and model"""
 import json
 import unittest
-from Forum.tests.v1.base_test import BaseTestCase
-from Forum.tests.v1.helper_methods import create_party
+from tests.v1.base_test import BaseTestCase
+from tests.v1.helper_methods import create_party
 
 
 class TestParty(BaseTestCase):
