@@ -1,50 +1,39 @@
-import json
 import unittest
-from Forum.app.api.v1.models.offices.office_models import OfficesModel
-from Forum.tests.v1.__init__ import BaseTest
-from Forum.app.__int__ import create_app
 
-class OfficeData:
-    def setUp(self):
-        self.app = create_app
-        self.client = self.app.test_client()
-        Office = OfficesModel()
-        politicaloffice1 = {
+from Forum.tests.v1.helper_methods import create_office
+from Forum.tests.v1.base_test import BaseTestCase
+#from Forum.tests.v1.sample_data import SampleData
+
+class TestOffice(BaseTestCase):
+    politicaloffice = {
             "id":9,
             "name":"office1",
             "type":"type1"
 
         }
-        politicaloffice2 = {
-            "id":20,
-            "name":"office2",
-            "type":"type3"
-        }
-class BaseOfficeClass(OfficeData,BaseTest):
-    """sets up the path for endpoints"""
-    path ="/api/v1/offices"
+    
+    def setUp(self):
+        super(TestOffice, self).setUp()
 
-class TestEndpoints(OfficeData, unittest.TestCase):
-    
-    def test_create_office(self):
-        resp = self.client.post(path, data=json.dumps(self.politicaloffice1), content_type='application/json')
-        self.assertEqual(resp.status_code, 201)
-    def test_get_all_offices(self):
-        """tests endpoint to get all offices"""
-        resp = self.client.get(path, content_type='application/json')
+    def test_posting_an_office(self):
+        """Test for creating a new office"""
+        resp = create_office(self, politicaloffice)
         self.assertEqual(resp.status_code, 200)
-    
-    def test_get_specific_office(self):
-        """tests the endpoint to get a specific office"""        
-        post = self.client.post(path='', data=json.dumps(self.politicaloffice1), content_type='application/json')
-        int_id = int(post.json['blog_id'])
-        path = '{}'.format(int_id)
+
+    def test_getting_all_offices(self):
+        """Test for getting all offfices"""
+        resp = self.client.get(path='/api/v1/offices/')
+        self.assertEqual(resp.status_code, 200)
+
+    def test_getting_a_single_office(self):
+        """Test for getting a single office"""
+        data = politicaloffice
+        post = create_office(self, data)
+        int_id = int(post.json['data'][-1]['id'])
+        path = '/api/v1/offices/{}'.format(int_id)
         response = self.client.get(path, content_type='application/json')
         self.assertEqual(response.status_code, 200)
-        
+
 
 if __name__ == '__main__':
     unittest.main()
-
-"""if __name__ == '__main__':
-    unnittest.main() """
