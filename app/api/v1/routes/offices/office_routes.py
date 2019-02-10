@@ -1,5 +1,5 @@
 from flask import jsonify, make_response, request, Blueprint
-from Forum.app.api.v1.models.offices.office_models import OfficesModel
+from app.api.v1.models.offices.office_models import OfficesModel
 
 offices_bp = Blueprint('office_blueprint',__name__)
 office_list= []
