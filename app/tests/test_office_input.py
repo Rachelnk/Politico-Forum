@@ -5,28 +5,36 @@ from .base_test import BaseTestCase
 
 
 class TestOffice(BaseTestCase):
-    politicaloffice = {
-            "id":9,
-            "name":"office1",
-            "type":"type1"
-
-        }
+    
     
     def setUp(self):
         super(TestOffice, self).setUp()
 
     def test_posting_an_office(self):
         """Test for creating a new office"""
+         politicaloffice = {
+            "id":9,
+            "name":"office1",
+            "type":"type1"
+
+        }
         resp = create_office(self, politicaloffice)
-        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status_code, 404)
 
     def test_getting_all_offices(self):
         """Test for getting all offfices"""
+       
         resp = self.client.get(path='/api/v1/offices/')
-        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status_code, 404)
 
     def test_getting_a_single_office(self):
         """Test for getting a single office"""
+        politicaloffice = {
+            "id":9,
+            "name":"office1",
+            "type":"type1"
+
+        }
         data = politicaloffice
         post = create_office(self, data)
         int_id = int(post.json['data'][-1]['id'])
