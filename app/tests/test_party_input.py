@@ -26,16 +26,30 @@ class TestParty(BaseTestCase):
 
     def test_posting_a_party(self):
         """Test for creating a new party"""
+        politicalparty= {
+            "id":4,
+            "name":"office1",
+            "logoUrl":"logoUrl1",
+            "hqAddress":"hqAddress1"
+
+        }
         resp = create_party(self, politicalparty)
-        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status_code, 404)
 
     def test_getting_all_parties(self):
         """Test for getting all parties"""
         resp = self.client.get(path='/api/v1/parties/')
-        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status_code, 404)
 
     def test_getting_a_single_party(self):
         """Test for getting a single party"""
+         politicalparty= {
+            "id":4,
+            "name":"office1",
+            "logoUrl":"logoUrl1",
+            "hqAddress":"hqAddress1"
+
+        }
         post = create_party(self, politicalparty)
         int_id = int(post.json['data'][-1]['id'])
         path = '/api/v1/parties/{}'.format(int_id)
@@ -44,6 +58,13 @@ class TestParty(BaseTestCase):
 
     def test_editing_a_party(self):
         """Test for editing a party"""
+         politicalparty= {
+            "id":4,
+            "name":"office1",
+            "logoUrl":"logoUrl1",
+            "hqAddress":"hqAddress1"
+
+        }
         post = create_party(self, politicalparty)
         int_id = int(post.json['data'][-1]['id'])
         path = '/api/v1/parties/{}'.format(int_id)
@@ -53,6 +74,13 @@ class TestParty(BaseTestCase):
 
     def test_deleting_a_party(self):
         """Test for deleting a party"""
+         politicalparty= {
+            "id":4,
+            "name":"office1",
+            "logoUrl":"logoUrl1",
+            "hqAddress":"hqAddress1"
+
+        }
         post = create_party(self, politicalparty)
         int_id = int(post.json['data'][-1]['id'])
         path = '/api/v1/parties/{}'.format(int_id)
