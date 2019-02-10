@@ -6,10 +6,14 @@
 <p> Clone the repository to your local computer or download a zip file and extract. Here's the link to the application https://github.com/Rachelnk/Politico-Forum.git</p>
 
 <h1>Requirements  </h1>
-<p>To run the application you will need <li> Python 3.6 . Download it from <a href="">here</a></l1><l1>Flask.Download it from <a href="">here</a></l1>
-<l1>Postman.Download it from <a href="">here</a></l1></p>
-<p>Once you have installed flask,set up a virtual environment and activate it: 
-  venv\Scripts\activate <\p>
+<p>To run the application you will need:
+  <li> Python 3.6 . Download it from <a href="">here</a></l1>
+  <l1>Flask. Download it from <a href="">here</a></l1>
+<l1>Postman. Download it from <a href="">here</a></l1></p>
+<p>Once you have installed flask,set up a virtual environment and activate it:<\p> 
+  <table><tr><td>
+  venv\Scripts\activate 
+    </table></tr></td>
 <p>Ensure to install the packages in the requirements.txt file</p>
   
 <h1>Testing</h1>
@@ -28,18 +32,35 @@
     <td>Create a new political party</td>
     </tr>
   <tr>
-    <td>POST</td>
+    <td>GET</td>
     <td>/api/v1/parties</td>
-    <td>Create a new political party</td>
+    <td>Fetches all the political parties</td>
+    </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/parties/<id></td>
+    <td>Fetches a specific political party</td>
+    </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/parties/<id></td>
+    <td>Deletes a political party</td>
     </tr>
   <tr>
     <td>POST</td>
-    <td>/api/v1/parties</td>
-    <td>Create a new political party</td>
+    <td>/api/v1/offices</td>
+    <td>Create a new political office</td>
     </tr>
   <tr>
-    <td>POST</td>
-    <td>/api/v1/parties</td>
-    <td>Create a new political party</td>
+    <td>GET</td>
+    <td>/api/v1/offices</td>
+    <td>Fetches all the political offices</td>
     </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/offices/<id></td>
+    <td>Fetches a specific political office</td>
+    </tr>
+  <h1>License</h1>
+  <p> Rachel Kiarie</p>
       
