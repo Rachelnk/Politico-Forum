@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint
 from app.api.v1.routes.parties.parties_route import parties_bp
-from app.api.v1.routes.offices.offices_route import offices_bp
+from app.api.v1.routes.offices.office_routes import offices_bp
 
 from Forum.configurations.config import app_config
 #register blueprints
