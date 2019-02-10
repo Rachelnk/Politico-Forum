@@ -1,2 +1,2 @@
 
-web: gunicorn run:flask_app
+web: gunicorn run:flask_app wsgi --log-file -
