@@ -24,7 +24,7 @@
   <tr>
   <th>Method</th>
    <th>URL</th>
-   <th>Funnction</th>
+   <th>Function</th>
   </tr>
   <tr>
     <td>POST</td>
@@ -61,6 +61,7 @@
     <td>/api/v1/offices/<id></td>
     <td>Fetches a specific political office</td>
     </tr>
+  </table>
   <h1>License</h1>
   <p> Rachel Kiarie</p>
       
