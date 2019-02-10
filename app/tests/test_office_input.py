@@ -1,7 +1,7 @@
 import unittest
 
-from Forum.tests.v1.helper_methods import create_office
-from Forum.tests.v1.base_test import BaseTestCase
+from tests.v1.helper_methods import create_office
+from tests.v1.base_test import BaseTestCase
 #from Forum.tests.v1.sample_data import SampleData
 
 class TestOffice(BaseTestCase):
