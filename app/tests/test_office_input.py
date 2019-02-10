@@ -1,8 +1,8 @@
 import unittest
 
-from Forum.tests.v1.helper_methods import create_office
-from Forum.tests.v1.base_test import BaseTestCase
-#from Forum.tests.v1.sample_data import SampleData
+from .helper_methods import create_office
+from .base_test import BaseTestCase
+
 
 class TestOffice(BaseTestCase):
     politicaloffice = {
