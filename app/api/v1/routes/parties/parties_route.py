@@ -1,6 +1,6 @@
 
 from flask import jsonify, make_response, request, Blueprint
-from Forum.app.api.v1.models.parties.parties_models import PartiesModel
+from app.api.v1.models.parties.parties_models import PartiesModel
 
 parties_bp = Blueprint('party_blueprint',__name__)
 
