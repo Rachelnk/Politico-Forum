@@ -9,6 +9,5 @@ class BaseTestCase(unittest.TestCase):
     """path = "/api/v1" """
     def setUp(self):
         """configures the settings to be used to test"""
-        self.app = create_app(config_name='testing')
-        self.app.testing = True
+        self.app = create_app
         self.client = self.app.test_client()
