@@ -1,5 +1,5 @@
 import os
-from app.__int__ import create_app
+from app import create_app
 
 flask_app = create_app('development')
 
